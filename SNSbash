@@ -1,0 +1,8 @@
+# Create SNS topic
+aws sns create-topic --name ImageAlertsTopic
+
+# Subscribe an email
+aws sns subscribe \
+  --topic-arn arn:aws:sns:us-east-1:123456789012:ImageAlertsTopic \
+  --protocol email \
+  --notification-endpoint your_email@example.com
