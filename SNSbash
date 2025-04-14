@@ -1,8 +1,8 @@
-# Create SNS topic
-aws sns create-topic --name ImageAlertsTopic
+# Create SNS topic (if not already created)
+aws sns create-topic --name ImageRecognitionTopicv1
 
 # Subscribe an email
 aws sns subscribe \
-  --topic-arn arn:aws:sns:us-east-1:123456789012:ImageAlertsTopic \
+  --topic-arn arn:aws:sns:us-east-1:650251692555:ImageRecognitionTopicv1:75e13bbe-1503-4a23-8568-7f9fe9d74d5c \
   --protocol email \
-  --notification-endpoint your_email@example.com
+  --notification-endpoint vishk0442@gmail.com
