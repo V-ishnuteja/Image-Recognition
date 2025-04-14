@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "image-recognition-bucket-v1"
+        },
+        "object": {
+          "key": "test-image.jpg"
+        }
+      }
+    }
+  ]
+}
